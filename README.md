@@ -33,11 +33,11 @@ python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=d
 
 ### Finetune with Lower Learning Rate
 ```shell
-python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold0 opt.lr=1e-3 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD0_CHECKPOINT] data.fold_id=0
-python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold1 opt.lr=1e-3 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD1_CHECKPOINT] data.fold_id=1
-python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold2 opt.lr=1e-3 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD2_CHECKPOINT] data.fold_id=2
-python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold3 opt.lr=1e-3 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD3_CHECKPOINT] data.fold_id=3
-python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold4 opt.lr=1e-3 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD4_CHECKPOINT] data.fold_id=4
+python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold0 opt.lr=2e-4 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD0_CHECKPOINT] data.fold_id=0
+python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold1 opt.lr=2e-4 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD1_CHECKPOINT] data.fold_id=1
+python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold2 opt.lr=2e-4 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD2_CHECKPOINT] data.fold_id=2
+python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold3 opt.lr=2e-4 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD3_CHECKPOINT] data.fold_id=3
+python 02_train.py trainer.accelerator=gpu trainer.devices=-1 trainer.strategy=ddp trainer.precision=16 data.num_workers=5 trainer.max_epochs=32 wandb.name=ft_fold4 opt.lr=2e-4 scheduler.min_lr=0.0 task.sn_th=1.0 model.resume_path=[PATH_TO_FOLD4_CHECKPOINT] data.fold_id=4
 ```
 
 ### Test for submission
