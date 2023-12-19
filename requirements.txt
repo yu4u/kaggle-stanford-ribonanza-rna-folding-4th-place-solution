@@ -1,0 +1,16 @@
+tqdm
+numpy
+pandas
+albumentations
+timm
+opencv-python
+scikit-learn
+pytorch-lightning
+omegaconf
+wandb
+transformers
+pyarrow
+jupyter
+matplotlib
+torch_geometric
+h5py
